@@ -13,6 +13,7 @@ public class Test {
 		JdbcTemplate jT = (JdbcTemplate) context.getBean("jdbcTemplate");
 		String sql = "insert into employee values(?,?,?)";
 		int result = jT.update(sql, 1, "Bindu", "hima");
+		//huge me
 		System.out.println("number of rows inserted:" + result);
 		
 	}
